@@ -1,7 +1,7 @@
 {% set name = "pytest-replay" %}
-{% set version = "0.2.1" %}
+{% set version = "0.2.2" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "7c08cba713c9335f2149f0ef9587b92467d60365d10546837a1952042377601d" %}
+{% set hash_value = "ab3e089b3dec0c37dc39d88935cccaa5f6d763ec6d782224378beae51b6dd944" %}
 
 package:
   name: '{{ name|lower }}'

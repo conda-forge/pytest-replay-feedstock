@@ -1,24 +1,21 @@
 {% set name = "pytest-replay" %}
 {% set version = "1.0.0" %}
-{% set hash_type = "sha256" %}
-{% set hash_value = "21e9e26857cd4d386109176dea32983af963af30c5a1a8944a1a59bd2b3e7c68" %}
 
 package:
   name: '{{ name|lower }}'
   version: '{{ version }}'
 
 source:
-  fn: '{{ name }}-{{ version }}.tar.gz'
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  '{{ hash_type }}': '{{ hash_value }}'
+  sha256: 21e9e26857cd4d386109176dea32983af963af30c5a1a8944a1a59bd2b3e7c68
 
 build:
-  number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 1
+  script: "{{ PYTHON }} -m pip install . -vv"
   noarch: python
 
 requirements:
-  build:
+  host:
     - pip
     - python >=3.6
     - setuptools_scm    
@@ -44,3 +41,4 @@ extra:
     - nicoddemus
     - tadeu
     - prusse-martin
+    - marcelotrevisani

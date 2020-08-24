@@ -1,7 +1,7 @@
 {% set name = "pytest-replay" %}
-{% set version = "1.2.0" %}
+{% set version = "1.2.1" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "09d28df66bd2336e13909e7b6fc9ee63adb2c34cf5b4f2d601de445103f96aac" %}
+{% set hash_value = "e0cdbc84df321781b8f6056a255269ea2762bf80d52ecfcfcaac8d5fc90904ac" %}
 
 package:
   name: '{{ name|lower }}'
@@ -21,8 +21,8 @@ requirements:
   build:
     - pip
     - python >=3.6
-    - setuptools_scm    
-  run:    
+    - setuptools_scm
+  run:
     - pytest >=3.0.0
     - python >=3.6
 

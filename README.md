@@ -5,9 +5,11 @@ Home: https://github.com/ESSS/pytest-replay
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pytest-replay-feedstock/blob/master/LICENSE.txt)
 
 Summary: Saves shell scripts that allow re-execute previous pytest runs to reproduce crashes or flaky tests
+
+Development: https://github.com/ESSS/pytest-replay
 
 Saves previous test runs and allow re-execute previous pytest runs to reproduce crashes or flaky tests
 

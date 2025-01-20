@@ -11,21 +11,23 @@ source:
   sha256: e1a6d2e4f442a2793d75d8c24f59f5632c31494cb84cda046e9f97293ad51fdc
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
     - setuptools
     - setuptools_scm
   run:
     - pytest >=3.0.0
-    - python >=3.8
+    - python >={{ python_min }}
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - pytest_replay
 

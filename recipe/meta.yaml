@@ -1,5 +1,5 @@
 {% set name = "pytest-replay" %}
-{% set version = "1.7.1" %}
+{% set version = "1.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,8 +7,8 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 855af4fe381a80519d0a5e3d2c06be4148868d499f0421b141e8004225aa7516
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: f17c97cfa947c7d49c4f3aab96ebf5fa56e6437a77ea409fd3e5a3a4fa05a563
 
 build:
   number: 0
